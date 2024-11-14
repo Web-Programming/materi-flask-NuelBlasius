@@ -7,7 +7,7 @@ def home():
     return render_template('index.html', title = "Home Page")
 
 # Route TO /contact
-@app.route('/contact', method=['GET', 'POST'])
+@app.route('/contact', methods=['GET', 'POST'])
 def conatact():
     if request.method == 'POST':
         name = request.form['name']
